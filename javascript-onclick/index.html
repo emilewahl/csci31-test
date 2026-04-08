@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS OnClick Event Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      function showAlert() {
+        alert("This is an alert!");
+      }
+      function changeContent() {
+        const myParagraph = document.getElementById("my-paragraph");
+        myParagraph.innerHTML = 'Test';
+      }
+    </script>
+  </head>
+
+  <body class="flex-col p-3">
+    <button
+    class="bg-blue-200 hover:bg-blue-300 px-4 py-3 mx-3 rounded-lg shadow"
+    onclick="showAlert()">
+      Button One
+    </button>
+
+    <button
+    class="bg-blue-200 hover:bg-blue-300 px-4 py-3 mx-3 rounded-lg shadow"
+    onclick="changeContent()">
+      Button Two
+    </button>
+
+    <p class="p-3 bg-stone-100 mt-3" id="my-paragraph">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum, arcu interdum iaculis bibendum, neque velit viverra lacus, vitae vestibulum libero elit eu tellus. Integer efficitur lectus non fermentum hendrerit. Donec quis rutrum lorem. Cras in odio sodales, tincidunt sapien molestie, fermentum metus. Aliquam viverra dolor in tellus congue consequat. Etiam luctus lectus quis aliquam ornare. Maecenas rutrum nisi et risus euismod, nec pretium tellus luctus. Nam nec ligula odio. Morbi ante ligula, efficitur id magna lacinia, blandit ultrices augue. Quisque tincidunt dictum sagittis. Aenean tempor dui eu elit porta porttitor. Proin id lobortis dui. Nulla sit amet mauris eros. Phasellus id nulla sit amet lectus hendrerit tempus. Morbi tempus, risus in dapibus maximus, erat ante tristique metus, ac malesuada mi nisi eu massa.
+    </p>
+  </body>
+</html>
