@@ -21,6 +21,11 @@ function Main() {
     <div className="flex gap-x-12 my-12 flex-wrap gap-y-6" id="card-container">
     {cards.map((card, index) => <Card key={index} title={card.title} image={card.img} />)}
     </div>
+    <Flex classNames="bg-gray-600 text-gray-100">
+      <span>Child tag one</span>
+      <span>Child tag two</span>
+      <span>Child tag three</span>
+    </Flex>
     </main>
   );
 }
